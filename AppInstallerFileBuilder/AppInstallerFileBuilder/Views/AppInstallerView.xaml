@@ -74,7 +74,6 @@
         </ScrollViewer>
 
         <RelativePanel
-            Background="#e6e3e3"
             Height="60" 
             RelativePanel.AlignBottomWithPanel="True"
             RelativePanel.AlignRightWithPanel="True"

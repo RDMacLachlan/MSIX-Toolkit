@@ -594,7 +594,6 @@
         </Grid>
 
         <RelativePanel
-            Background="#e6e3e3" 
             RelativePanel.AlignBottomWithPanel="True"
             RelativePanel.AlignRightWithPanel="True"
             RelativePanel.AlignLeftWithPanel="True"
