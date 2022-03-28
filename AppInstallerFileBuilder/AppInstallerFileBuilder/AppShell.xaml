@@ -114,7 +114,7 @@
         <SplitView x:Name="RootSplitView"
                        DisplayMode="Inline"
                        OpenPaneLength="285"
-                       PaneBackground="{ThemeResource SystemControlChromeMediumAcrylicWindowMediumBrush}"
+                       PaneBackground="{ThemeResource SystemControlAccentDark2AcrylicWindowAccentDark2MediumHighBrush}"
                        LightDismissOverlayMode="On"
                        IsTabStop="False">
 
@@ -133,6 +133,7 @@
                     </Grid.RowDefinitions>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="240*"/>
                         <ColumnDefinition Width="48"/>
                         <ColumnDefinition Width="48"/>
                     </Grid.ColumnDefinitions>
@@ -145,74 +146,90 @@
                         Text="AppInstaller File Builder"
                         FontWeight="Bold"
                         FontSize="20"
-                        Margin="16,40,0,-12"
-                        Grid.ColumnSpan="3"
+                        Foreground="{ThemeResource SystemChromeWhiteColor}"
+                        Margin="16,12,0,18"
+                        Grid.ColumnSpan="4"
                         Grid.Row="0"
-                        >
-                    </TextBlock>
+                        Grid.Column="0"
+                        />
                     <TextBlock
                         x:Name="appVersion"
                         x:Uid="appVersion"
-                        Margin="16,70,0,-12"
-                        Grid.ColumnSpan="3"
+                        Foreground="{ThemeResource SystemChromeWhiteColor}"
+                        Margin="16,40,0,17"
+                        Grid.ColumnSpan="4"
                         Grid.Row="0"
+                        Grid.Column="0"
                         FontSize="11"
                         />
 
                     <controls:NavMenuListView 
                         x:Name="NavMenuList"
                         Grid.ColumnSpan="3"
-                        Grid.Row="2"
                         TabIndex="3"
-                        Margin="0,10,0,20"
+                        Grid.Row="3"
+                        Grid.Column="1"
+                        Foreground="White"
+                        Margin="0,0,-1,0"
                         ContainerContentChanging="NavMenuItemContainerContentChanging"
                         ItemContainerStyle="{StaticResource NavMenuItemContainerStyle}"
                         ItemTemplate="{StaticResource NavMenuItemTemplate}"
-                        ItemInvoked="NavMenuList_ItemInvoked"/>
+                        ItemInvoked="NavMenuList_ItemInvoked" 
+                        />
 
                     <TextBlock 
                         x:Name="Header2"
                         Text="Advanced"
                         FontWeight="Bold"
                         FontSize="20"
+                        Foreground="{ThemeResource SystemChromeWhiteColor}"
                         Margin="16,0,0,0"
-                        Grid.ColumnSpan="3"
-                        Grid.Row="3"
-                        >
-                    </TextBlock>
+                        Grid.ColumnSpan="4"
+                        Grid.Row="4"
+                        Grid.Column="0"
+                        />
+
 
                     <controls:NavMenuListView 
                         x:Name="NavMenuList2"
                         Grid.ColumnSpan="3"
                         TabIndex="3"
-                        Grid.Row="4"
-                        Margin="0,0,0,20"
+                        Grid.Row="5"
+                        Grid.Column="1"
+                        Foreground="White"
+                        Margin="0,0,-1,0"
                         ContainerContentChanging="NavMenuItemContainerContentChanging"
                         ItemContainerStyle="{StaticResource NavMenuItemContainerStyle}"
                         ItemTemplate="{StaticResource NavMenuItemTemplate}"
-                        ItemInvoked="NavMenuList_ItemInvoked"/>
+                        ItemInvoked="NavMenuList_ItemInvoked" 
+                        />
 
                     <TextBlock 
                         x:Name="Header3"
                         Text="Generate"
                         FontWeight="Bold"
                         FontSize="20"
+                        Foreground="{ThemeResource SystemChromeWhiteColor}"
                         Margin="16,0,0,0"
-                        Grid.ColumnSpan="3"
-                        Grid.Row="5"
-                        >
-                    </TextBlock>
+                        Grid.ColumnSpan="4"
+                        Grid.Column="0"
+                        Grid.Row="6"
+                        />
+
 
                     <controls:NavMenuListView
                         x:Name="NavMenuList3"
                         Grid.ColumnSpan="3"
                         TabIndex="3"
-                        Grid.Row="6"
-                        Margin="0,0,0,0"
+                        Grid.Row="7"
+                        Grid.Column="1"
+                        Foreground="White"
+                        Margin="0,0,-1,0"
                         ContainerContentChanging="NavMenuItemContainerContentChanging"
                         ItemContainerStyle="{StaticResource NavMenuItemContainerStyle}"
                         ItemTemplate="{StaticResource NavMenuItemTemplate}"
-                        ItemInvoked="NavMenuList_ItemInvoked"/>
+                        ItemInvoked="NavMenuList_ItemInvoked" 
+                        />
 
                     <!-- TODO: Keith - Create multiple NavMenulists and put headers to split them up. Can reference which page to go to them using Back/Next buttons-->
                 </Grid>
